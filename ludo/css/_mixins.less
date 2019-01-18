@@ -1,0 +1,27 @@
+.radius() {
+    -webkit-border-radius: @radius;
+    -moz-border-radius: @radius;
+    border-radius: @radius;
+}
+.size(@width, @height) {
+	width: @width;
+	height: @height;
+}
+
+.square(@size) {
+	width: @size;
+	height: @size;
+}
+
+.aligncenter() {
+	display: flex;
+	align-items: center;
+}
+
+.wrapper (){
+	padding: @gap;
+
+	@media @laptop {
+		padding: @gap*2;
+	}
+}
